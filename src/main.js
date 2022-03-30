@@ -13,17 +13,13 @@ window.onload = async () => {
     console.log("onload");
     document.getElementById("home").addEventListener("click", () => startLogin());
     document.getElementById("username").addEventListener("click", () => startProfileUpdate());
-    if (window.location.hash) {
-        handleRedirectBack();
-    } else {
-        await getToken();
-        skWidget = document.getElementsByClassName("skWidget")[0];
-    }
+    document.getElementById("logout").addEventListener("click", () => logout());
+    skWidget = document.getElementsByClassName("skWidget")[0];
 }
 
 async function startProfileUpdate() {
     console.log("startProfileUpdate for user " + idTokenClaims.username);
-
+    await getToken();
     let parameters = {
         'username': idTokenClaims.username
     }
@@ -32,6 +28,8 @@ async function startProfileUpdate() {
 
 async function startLogin() {
     console.log("startLogin");
+    showSpinner ();
+    await getToken();
     showWidget(props.loginPolicyId, successCallback, errorCallback, onCloseModal);
 }
 
@@ -79,6 +77,7 @@ async function showWidget(policyId, successCallback, errorCallback, onCloseModal
 function porfileChangeSuccessCallback(response) {
     console.log("porfileChangeSuccessCallback");
     singularkey.cleanup(skWidget);
+    hideSpinner ();
 }
 
 function successCallback(response) {
@@ -87,17 +86,20 @@ function successCallback(response) {
     singularkey.cleanup(skWidget);
     idTokenClaims = response.additionalProperties;
     updateUI(true);
+    hideSpinner ();
 }
 
 function errorCallback(error) {
     console.log("errorCallback");
     console.log(error);
     singularkey.cleanup(skWidget);
+    hideSpinner ();
 }
 
 function onCloseModal() {
     console.log("onCloseModal");
-    singularkey.cleanup(skWidget)
+    singularkey.cleanup(skWidget);
+    hideSpinner ();
 }
 
 function updateUI(isUserAuthenticated) {
@@ -112,6 +114,14 @@ function updateUI(isUserAuthenticated) {
         eachElement(".auth", (e) => e.style.display = "none");
         eachElement(".non-auth", (e) => e.style.display = "block");
     }
+}
+
+function showSpinner () {
+    document.getElementById ("spinner").classList.remove ("hidden");
+}
+
+function hideSpinner () {
+    document.getElementById ("spinner").classList.add ("hidden");
 }
 
 function getDisplayName(claims) {

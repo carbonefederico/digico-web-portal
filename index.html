@@ -10,15 +10,21 @@
     <script type="text/javascript" src="https://devsdk.singularkey.com/latest/singularkey.js"></script>
     <script type="text/javascript" src="src/main.js"></script>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-
-    <div id="navbar" class="navbar auth hidden">
+    <div class="spinner hidden" id="spinner">
+        <div class="spinner-icon icon fa-solid fa-spinner fa-6x fa-spin"></div>
+    </div>
+    <div id="navbar" class="navbar hidden auth">
         <div class="logo">
             <img src="assets/logo.png" alt="">
         </div>
-        <div id="username" class="user-label"></div>
+        <div class="user-menu" id="user-menu">
+            <div id="username" class="user-label"></div>
+            <div class="logout icon fa-solid fa-right-from-bracket fa-2x" id="logout"></div>
+        </div>
     </div>
     <div class="main">
         <img id="home" class="home-image" src="assets/home.jpg" alt="">

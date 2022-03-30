@@ -140,6 +140,21 @@ input {
   width: 100%;
 }
 
+.dav-footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.dav-button-link {
+  color: black;
+  cursor: pointer;
+  background: transparent;
+  border-style: hidden;
+
+  font-size: 1rem;
+}
+
 .dav-split-container {
   display: flex;
   gap: 40px;

@@ -8,14 +8,62 @@ const props = {
 let token;
 let skWidget;
 let idTokenClaims;
+let application_session_id;
 
-window.onload = async () => {
+window.onload = () => {
     console.log("onload");
+   
     document.getElementById("home").addEventListener("click", () => startLogin());
     document.getElementById("username").addEventListener("click", () => startProfileUpdate());
     document.getElementById("logout").addEventListener("click", () => logout());
     skWidget = document.getElementsByClassName("skWidget")[0];
+    
+    if (getCookieValue ("sid")) {
+        application_session_id = getCookieValue ("sid");
+    } else {
+        application_session_id = generateSessionId();
+    }
+
+    console.log("Session id " + application_session_id);
+    initSecuredTouch(function () {
+        console.log("callback function. session id " + application_session_id);
+        _securedTouch.init({
+            url: "https://us.securedtouch.com",
+            appId: "ping-te-3",
+            appSecret: "EJBgAz1mFeQFveSDqD6eYf6Dgs5T",
+            userId: null,   // todo: Set the userId if the user is already logged-in.
+            // If the user state is unknown when initializing the SDK, do not use this parameter.
+            sessionId: application_session_id, // todo: Set your applicative sessionId if you have it
+            isDebugMode: false,
+            isSingleDomain: false, // todo: set to true if your website uses only one domain and no subdomains
+        }).then(function () {
+            console.log("SecuredTouchSDK initialized successfully");
+            let curl = "curl --location --request GET 'https://us-api.securedtouch.com/SecuredTouch/rest/v4/ping-te-3/sessionRisk/" + application_session_id + "?verbose=true' --header 'Authorization: Hw7abzGYSiTPTtHe6qj1'--header 'X-St-Token: " + window['_securedTouchToken'] + "'";
+            console.log("*** CURL ***");
+            console.log(curl);
+        }).catch(function (e) {
+            console.error("An error occurred. Please check your init configuration", e);
+        });
+    });
 }
+
+function generateSessionId() {
+    console.log("generateSessionId");
+    let id = Date.now().toString(36) + Math.random().toString(36).substring(2);
+    return id;
+}
+
+function initSecuredTouch(callback) {
+    console.log("initSecuredTouch");
+    if (window['_securedTouchReady']) {
+        console.log("calling callback");
+        callback();
+    } else {
+        console.log("adding event listener");
+        document.addEventListener('SecuredTouchReadyEvent', callback);
+    }
+}
+
 
 async function startProfileUpdate() {
     console.log("startProfileUpdate for user " + idTokenClaims.username);
@@ -28,14 +76,20 @@ async function startProfileUpdate() {
 
 async function startLogin() {
     console.log("startLogin");
+    let parameters = {
+        "sessionId": application_session_id,
+        "stToken": window['_securedTouchToken']
+    }
     showSpinner ();
     await getToken();
-    showWidget(props.loginPolicyId, successCallback, errorCallback, onCloseModal);
+    showWidget(props.loginPolicyId, successCallback, errorCallback, onCloseModal,parameters);
 }
 
 async function logout() {
     console.log("logout");
     idTokenClaims = null;
+    deleteCookie ("sid");
+    _securedTouch.logout(application_session_id);
     updateUI(false);
 }
 
@@ -82,11 +136,13 @@ function porfileChangeSuccessCallback(response) {
 
 function successCallback(response) {
     console.log("successCallback");
+    console.log (document.cookie);
     console.log(response);
     singularkey.cleanup(skWidget);
     idTokenClaims = response.additionalProperties;
     updateUI(true);
     hideSpinner ();
+    _securedTouch.login(idTokenClaims.username, application_session_id);
 }
 
 function errorCallback(error) {
@@ -98,6 +154,7 @@ function errorCallback(error) {
 
 function onCloseModal() {
     console.log("onCloseModal");
+    console.log (document.cookie);
     singularkey.cleanup(skWidget);
     hideSpinner ();
 }
@@ -110,9 +167,9 @@ function updateUI(isUserAuthenticated) {
         document.getElementById("username").innerText = getDisplayName(idTokenClaims);
         document.getElementById("navbar").classList.remove("hidden");
     } else {
+        showPage("home");
         document.getElementById("username").innerText = "Account";
-        eachElement(".auth", (e) => e.style.display = "none");
-        eachElement(".non-auth", (e) => e.style.display = "block");
+        document.getElementById("navbar").classList.add ("hidden");
     }
 }
 
@@ -134,16 +191,18 @@ function getDisplayName(claims) {
 
 function showPage(idToShow) {
     hideAll();
-    document.getElementById(idToShow).style.display = "block";
+    document.getElementById(idToShow).classList.remove ("hidden");
 }
 
 function hideAll() {
     console.log("hideAll");
-    document.querySelectorAll(".home-image").forEach((e) => e.style.display = "none");
+    document.querySelectorAll(".home-image").forEach((e) => e.classList.add ("hidden"));
 }
 
-function eachElement(selector, fn) {
-    for (let e of document.querySelectorAll(selector)) {
-        fn(e);
-    }
+function deleteCookie(name) {
+    document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  }
+
+function getCookieValue (name) {
+    return document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || '';
 }

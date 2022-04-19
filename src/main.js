@@ -2,6 +2,7 @@ const props = {
     "companyId": "2bdaf281-44e3-4009-9e9b-b9e33777f5df",
     "loginPolicyId": "2CLOLGfNf9SEBcEyfkqCgIP3WNHljhUY",
     "preferencesPolicyId": "iUL6OlMwI5spwBuCoZdD7GC9QhUOTuiY",
+    "trxPolicyId": "9a369b200bdda575c77db3fdcefa4f20",
     "apiKey": "vC3IApdZFgp874z2VpZupiw7XuZqfiDFOM2si6rEAJ7dGL1SJAOO0CpUaykZ5pouTcerPpza418gNCIQ2MTebBKnQVY0bgKUeYPI7KSBddVV1C7DkXznvWFtdyk0uZsNuDqDIs09LLDZ381BjytPwLYcYxLvggAg0mfw77fAZnTm0whihQFgp4qUzrfmMkW5S1uCowE18eHH2fxuvAhcCdlWushJjZI4LaMglSlBRfmSvDLxpRgd6wUGI1t5Tr7T"
 }
 
@@ -11,11 +12,12 @@ let idTokenClaims;
 let application_session_id;
 
 window.onload = () => {
-    console.log("onload");
-   
     document.getElementById("home").addEventListener("click", () => startLogin());
     document.getElementById("username").addEventListener("click", () => startProfileUpdate());
     document.getElementById("logout").addEventListener("click", () => logout());
+
+    document.getElementById("logo").addEventListener("click", () => startTransaction());
+
     skWidget = document.getElementsByClassName("skWidget")[0];
     
     if (getCookieValue ("sid")) {
@@ -24,9 +26,7 @@ window.onload = () => {
         application_session_id = generateSessionId();
     }
 
-    console.log("Session id " + application_session_id);
     initSecuredTouch(function () {
-        console.log("callback function. session id " + application_session_id);
         _securedTouch.init({
             url: "https://us.securedtouch.com",
             appId: "ping-te-3",
@@ -37,7 +37,7 @@ window.onload = () => {
             isDebugMode: false,
             isSingleDomain: false, // todo: set to true if your website uses only one domain and no subdomains
         }).then(function () {
-            console.log("SecuredTouchSDK initialized successfully");
+            console.log("SecuredTouchSDK initialized successfully with Session id " + application_session_id);
             let curl = "curl --location --request GET 'https://us-api.securedtouch.com/SecuredTouch/rest/v4/ping-te-3/sessionRisk/" + application_session_id + "?verbose=true' --header 'Authorization: Hw7abzGYSiTPTtHe6qj1'--header 'X-St-Token: " + window['_securedTouchToken'] + "'";
             console.log("*** CURL ***");
             console.log(curl);
@@ -47,31 +47,40 @@ window.onload = () => {
     });
 }
 
+function initSecuredTouch(callback) {
+    if (window['_securedTouchReady']) {
+        callback();
+    } else {
+        document.addEventListener('SecuredTouchReadyEvent', callback);
+    }
+}
+
 function generateSessionId() {
     console.log("generateSessionId");
     let id = Date.now().toString(36) + Math.random().toString(36).substring(2);
     return id;
 }
 
-function initSecuredTouch(callback) {
-    console.log("initSecuredTouch");
-    if (window['_securedTouchReady']) {
-        console.log("calling callback");
-        callback();
-    } else {
-        console.log("adding event listener");
-        document.addEventListener('SecuredTouchReadyEvent', callback);
-    }
-}
-
 
 async function startProfileUpdate() {
     console.log("startProfileUpdate for user " + idTokenClaims.username);
+    showSpinner ();
     await getToken();
     let parameters = {
         'username': idTokenClaims.username
     }
     showWidget(props.preferencesPolicyId, porfileChangeSuccessCallback, errorCallback, onCloseModal, parameters);
+}
+
+async function startTransaction() {
+    console.log("startTransaction for user " + idTokenClaims.username);
+    showSpinner ();
+    await getToken();
+    let parameters = {
+        "sessionId": application_session_id,
+        "stToken": window['_securedTouchToken']
+    }
+    showWidget(props.trxPolicyId, porfileChangeSuccessCallback, errorCallback, onCloseModal, parameters);
 }
 
 async function startLogin() {
@@ -94,8 +103,6 @@ async function logout() {
 }
 
 async function getToken() {
-    console.log("getToken");
-
     const url = "https://api.singularkey.com/v1/company/" + props.companyId + "/sdkToken";
     let response = await fetch(url, {
         method: "GET",
@@ -109,7 +116,6 @@ async function getToken() {
 }
 
 async function showWidget(policyId, successCallback, errorCallback, onCloseModal, parameters) {
-    console.log("showWidget");
     let widgetConfig = {
         config: {
             method: "runFlow",
@@ -135,13 +141,12 @@ function porfileChangeSuccessCallback(response) {
 }
 
 function successCallback(response) {
-    console.log("successCallback");
-    console.log (document.cookie);
     console.log(response);
     singularkey.cleanup(skWidget);
     idTokenClaims = response.additionalProperties;
     updateUI(true);
     hideSpinner ();
+    console.log("Calling ST login with username " + idTokenClaims.username + "for session " + application_session_id );
     _securedTouch.login(idTokenClaims.username, application_session_id);
 }
 

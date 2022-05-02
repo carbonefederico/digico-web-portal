@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DigiCo</title>
-    <script id="stPingId" src="https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3" defer></script>
+    <script id="stPingId" src="https://assets.pingone.com/p1f/web-sdk/4.3.0/p1f-sdk.js?appId=2bdaf281-44e3-4009-9e9b-b9e33777f5df"
+        defer></script>
     <script type="text/javascript" src="https://devsdk.singularkey.com/latest/singularkey.js"></script>
-    <script type="text/javascript" src="src/main.js"></script>
+    <script type="text/javascript" src="src/dav.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -17,20 +19,104 @@
     <div class="spinner hidden" id="spinner">
         <div class="spinner-icon icon fa-solid fa-spinner fa-6x fa-spin"></div>
     </div>
-    <div id="navbar" class="navbar hidden">
-        <div class="logo">
-            <img id="logo" src="assets/logo.png" alt="">
+    <div class="main-container">
+        <div id="navbar" class="navbar">
+            <div class="logo">
+                <img id="logo" src="assets/logo.png" alt="">
+            </div>
+            <div class="main-menu" id="functions-menu">
+                <div class="navbar-button">Markets</div>
+                <div class="navbar-button">Crypto Pay</div>
+                <div class="navbar-button">Crypto Credit</div>
+                <div class="navbar-button">Crypto Trading</div>
+            </div>
+            <div class="user-menu" id="user-menu">
+                <div id="login-button" class="navbar-button">Login</div>
+                <div id="register-button" class="navbar-button">Register</div>
+                <div id="username" class="navbar-button hidden"></div>
+                <div id="logout" class="navbar-button hidden">Logout</div>
+            </div>
         </div>
-        <div class="user-menu" id="user-menu">
-            <div id="username" class="user-label"></div>
-            <div class="logout icon fa-solid fa-right-from-bracket fa-2x" id="logout"></div>
+        <div id="landing" class="landing">
+            <div id="landing-message" class="landing-message">
+                <h1 class="landing-message-title">Your Crypto Marketplace</h1>
+                <p class="landing-message-text">Buy coins, crypto services, hire crypto experts, and more. Anything you
+                    might need is here</p>
+                <p class="landing-message-text">Register & receive a 5€ DigiCo Voucher</p>
+                <div id="landing-message-button" class="landing-message-button">Get Started</div>
+            </div>
+        </div>
+        <div id="home" class="home hidden">
+            <div class="home-section">
+                <div class="home-section-title">
+                    Your Balance
+                </div>
+                <div class="home-section-body">
+                    <div class="tile">
+                        <div class="tile-icon fa-solid fa-euro-sign fa-2x"></div>
+                        <div class="tile-title">
+                            78.655
+                        </div>
+                        <div class="tile-body">
+                            EUR
+                        </div>
+                    </div>
+                    <svg width="300" height="200">
+                        <polyline
+                            points="0,200 15,185 30,190 45,140 60,160 75,150 90,125 105,100 120,120 135,135 150,100 165,80 180,65 195,55 210,52 225,48 240,44 255,30 270,32 285,33 300,30"
+                            stroke="#24a0f5" stroke-width="2" stroke-linecap="round" fill="none" >
+                        </polyline>
+                    </svg>
+                </div>
+            </div>
+            <div class="home-section">
+                <div class="home-section-title">
+                    Your Wallets
+                </div>
+                <div class="home-section-body">
+
+                    <div class="tile">
+                        <div class="tile-icon fa-solid fa-euro-sign fa-2x"></div>
+                        <div class="tile-title">
+                            2000
+                        </div>
+                        <div class="tile-body">
+                            EUR
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tile-icon fa-brands fa-bitcoin fa-2x"></div>
+                        <div class="tile-title">
+                            1.2
+                        </div>
+                        <div class="tile-body">
+                            BTC
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tile-icon fa-brands fa-ethereum fa-2x"></div>
+                        <div class="tile-title">
+                            12
+                        </div>
+                        <div class="tile-body">
+                            ETH
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-section">
+                <div class="home-section-title">
+                    Add funds to your Euro wallet
+                </div>
+                <div class="deposit-form">
+
+                    <input type="text" name="amount" id="" placeholder="1.0 EUR">
+                    <div id="deposit-button" class="landing-message-button">Deposit</div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="main">
-        <img id="home" class="home-image" src="assets/home.jpg" alt="">
-        <img id="dashboard" class="home-image hidden" src="assets/dashboard.jpg" alt="">
-        <div id="widget" class="skWidget"></div>
-    </div>
+    <div id="widget" class="skWidget"></div>
 </body>
 
 </html>

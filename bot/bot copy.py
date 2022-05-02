@@ -21,7 +21,7 @@ print ("Connecting to website ...")
 browser.get("http://127.0.0.1:5501/index-new.html")
 time.sleep(3)
 print ("Starting the login process ...")
-browser.find_element(By.ID, "login-button").click()
+browser.find_element(By.ID, "home").click()
 time.sleep(3)
 
 print ("Reading the credentials file ...")

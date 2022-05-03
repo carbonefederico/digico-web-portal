@@ -15,7 +15,7 @@ function successCallback(response) {
     console.log("successCallback");
     singularkey.cleanup(skWidget);
     console.log(response.additionalProperties);
-    Android.handleLoginResponse(response.additionalProperties);
+    Android.handleLoginResponse("myString");
 }
 
 function errorCallback(error) {

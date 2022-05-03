@@ -42,6 +42,11 @@ window.onload = () => {
     });
 }
 
+window.onbeforeunload = () => {
+    console.log ("onbeforeunload. Loggin out Fraud session " + application_session_id);
+    _securedTouch.logout(application_session_id);
+}
+
 function initSecuredTouch(callback) {
     if (window['_securedTouchReady']) {
         callback();

@@ -4,6 +4,23 @@ const fraud_props = {
     "data_endpoint": "https://p1f-api.pingone.com"
 }
 
+let user_data = {
+    "carbone.federico@gmail.com": {
+        "balance": "78.655",
+        "change": "+3.59%",
+        "euro_wallet": "2000",
+        "btc_wallet": "1.2",
+        "eth_wallet": "12"
+    },
+    "zero": {
+        "balance": "0",
+        "change": "0%",
+        "euro_wallet": "0",
+        "btc_wallet": "0",
+        "eth_wallet": "0"
+    }
+}
+
 
 let token;
 let skWidget;
@@ -30,7 +47,7 @@ window.onload = () => {
             url: fraud_props.data_endpoint,
             appId: fraud_props.app_id,
             appSecret: fraud_props.app_secret,
-            userId: null, 
+            userId: null,
             sessionId: application_session_id,
             isDebugMode: false,
             isSingleDomain: false,
@@ -43,7 +60,7 @@ window.onload = () => {
 }
 
 window.onbeforeunload = () => {
-    console.log ("onbeforeunload. Loggin out Fraud session " + application_session_id);
+    console.log("onbeforeunload. Loggin out Fraud session " + application_session_id);
     _securedTouch.logout(application_session_id);
 }
 
@@ -148,6 +165,7 @@ function updateUI(isUserAuthenticated) {
 
     if (isUserAuthenticated) {
         document.getElementById("username").innerText = getDisplayName(idTokenClaims);
+        setAmounts(idTokenClaims.username);
         hideElement("login-button");
         hideElement("register-button");
         hideElement("landing")
@@ -163,6 +181,23 @@ function updateUI(isUserAuthenticated) {
         hideElement("home")
     }
 }
+
+function setAmounts(username) {
+    let data;
+    if (user_data[username]) {
+        displayElement("balance-chart");
+        data = user_data[username]
+    } else {
+        hideElement("balance-chart");
+        data = user_data["zero"]
+    }
+    let entries = Object.entries(data);
+    entries.forEach((e) => {
+        console.log("Setting " + e[0] + "," + e[1]);
+        document.getElementById(e[0]).innerText = e[1];
+    })
+}
+
 
 function displayElement(id) {
     document.getElementById(id).classList.remove("hidden");

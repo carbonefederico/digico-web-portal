@@ -482,3 +482,7 @@ p {
 .styles_hftPoweredByText__3_s0Y {
   visibility: hidden;
 }
+
+.sk-alert {
+  color: red;
+}

@@ -1,0 +1,96 @@
+{
+  "Name": "DigiCo Card Testing",
+  "CreationDate": "2022-5-5",
+  "Commands": [
+    {
+      "Command": "click",
+      "Target": "id=deposit-button",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "2000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "csvRead",
+      "Target": "100 cc records.csv",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "executeScript",
+      "Target": "return Number (2)",
+      "Value": "currentRow",
+      "Description": ""
+    },
+    {
+      "Command": "while_v2",
+      "Target": "true",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "${currentRow}",
+      "Value": "!CSVREADLINENUMBER",
+      "Description": ""
+    },
+    {
+      "Command": "csvRead",
+      "Target": "100 cc records.csv",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "name=number",
+      "Value": "${!COL4}",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=name",
+      "Value": " ${!COL5}",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=date",
+      "Value": " ${!COL8}",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=cvv",
+      "Value": " ${!COL6}",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=login-submit",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "2000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "executeScript",
+      "Target": "return ${currentRow} + 1",
+      "Value": "currentRow",
+      "Description": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

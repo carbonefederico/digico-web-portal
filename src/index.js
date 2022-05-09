@@ -4,30 +4,13 @@ const fraud_props = {
     "data_endpoint": "https://p1f-api.pingone.com"
 }
 
-let user_data = {
-    "carbone.federico@gmail.com": {
-        "balance": "78.655",
-        "change": "+3.59%",
-        "euro_wallet": "2000",
-        "btc_wallet": "1.2",
-        "eth_wallet": "12"
-    },
-    "zero": {
-        "balance": "0",
-        "change": "0%",
-        "euro_wallet": "0",
-        "btc_wallet": "0",
-        "eth_wallet": "0"
-    }
-}
-
-
+let user_data
 let token;
 let skWidget;
 let idTokenClaims;
 let application_session_id;
 
-window.onload = () => {
+window.onload = async () => {
     document.getElementById("login-button").addEventListener("click", () => startLogin());
     document.getElementById("register-button").addEventListener("click", () => startRegistration());
     document.getElementById("deposit-button").addEventListener("click", () => startTransaction());
@@ -57,6 +40,9 @@ window.onload = () => {
             console.error("An error occurred. Please check your init configuration", e);
         });
     });
+
+    let response = await fetch ("https://carbonefederico.github.io/demo-data/digico-balances/data.json");
+    user_data = await response.json ();
 }
 
 window.onbeforeunload = () => {

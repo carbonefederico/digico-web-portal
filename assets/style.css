@@ -4,6 +4,7 @@
   --button-background: #1199fa;
   --dark-blue-background: rgba(6, 17, 33, 1);
   --light-blue-background: #143364;
+  --icon-color: #0B558D;
 }
 
 body {
@@ -423,7 +424,7 @@ input {
 }
 
 div[class*="css-1"] {
-  background-color: var(--button-background) !important;
+  background-color: var(--icon-color) !important;
 }
 
 p {
@@ -483,6 +484,14 @@ p {
   visibility: hidden;
 }
 
+.css-0 {
+  text-align: center;
+}
+
 .sk-alert {
   color: red;
+}
+
+.dark-blue {
+  color: var(--icon-color);
 }

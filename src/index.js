@@ -81,8 +81,10 @@ async function startTransaction() {
     await getToken();
     let parameters = {
         "sessionId": application_session_id,
-        "stToken": window['_securedTouchToken']
+        "stToken": window['_securedTouchToken'],
+        "userName": idTokenClaims.username
     }
+
     showWidget(dav_props.trxPolicyId, porfileChangeSuccessCallback, errorCallback, onCloseModal, parameters);
 }
 

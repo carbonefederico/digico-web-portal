@@ -13,9 +13,10 @@ let application_session_id;
 window.onload = async () => {
     document.getElementById("login-button").addEventListener("click", () => startLogin());
     document.getElementById("register-button").addEventListener("click", () => startRegistration());
-    document.getElementById("deposit-button").addEventListener("click", () => startTransaction());
+    document.getElementById("deposit-button").addEventListener("click", () => startDeposit());
     document.getElementById("username").addEventListener("click", () => startProfileUpdate());
     document.getElementById("logout").addEventListener("click", () => logout());
+    document.getElementById("buy-btc-button").addEventListener ("click", () => startBuy ());
 
     skWidget = document.getElementsByClassName("skWidget")[0];
 
@@ -72,11 +73,11 @@ async function startProfileUpdate() {
     let parameters = {
         'username': idTokenClaims.username
     }
-    showWidget(dav_props.preferencesPolicyId, porfileChangeSuccessCallback, errorCallback, onCloseModal, parameters);
+    showWidget(dav_props.preferencesPolicyId, inSessionCallback, errorCallback, onCloseModal, parameters);
 }
 
-async function startTransaction() {
-    console.log("startTransaction for user " + idTokenClaims.username);
+async function startDeposit() {
+    console.log("startDeposit for user " + idTokenClaims.username);
     showSpinner();
     await getToken();
     let parameters = {
@@ -85,7 +86,23 @@ async function startTransaction() {
         "userName": idTokenClaims.username
     }
 
-    showWidget(dav_props.trxPolicyId, porfileChangeSuccessCallback, errorCallback, onCloseModal, parameters);
+    showWidget(dav_props.trxPolicyId, inSessionCallback, errorCallback, onCloseModal, parameters);
+}
+
+async function startBuy() {
+    console.log("startBuy for user " + idTokenClaims.username);
+    let amount = document.getElementById("btc-amount").value;
+    showSpinner();
+    await getToken();
+    let parameters = {
+        "sessionId": application_session_id,
+        "stToken": window['_securedTouchToken'],
+        "userName": idTokenClaims.username,
+        "amount": amount,
+        "currency": "BTC"
+    }
+
+    showWidget(dav_props.buyPolicyId, inSessionCallback, errorCallback, onCloseModal, parameters);
 }
 
 async function startRegistration() {
@@ -96,7 +113,7 @@ async function startRegistration() {
     }
     showSpinner();
     await getToken();
-    showWidget(dav_props.registrationPolicyId, successCallback, errorCallback, onCloseModal, parameters);
+    showWidget(dav_props.registrationPolicyId, initSessionCallback, errorCallback, onCloseModal, parameters);
 }
 
 async function startLogin() {
@@ -107,7 +124,7 @@ async function startLogin() {
     }
     showSpinner();
     await getToken();
-    showWidget(dav_props.loginPolicyId, successCallback, errorCallback, onCloseModal, parameters);
+    showWidget(dav_props.loginPolicyId, initSessionCallback, errorCallback, onCloseModal, parameters);
 }
 
 async function logout() {
@@ -118,13 +135,13 @@ async function logout() {
     updateUI(false);
 }
 
-function porfileChangeSuccessCallback(response) {
-    console.log("porfileChangeSuccessCallback");
+function inSessionCallback(response) {
+    console.log("inSessionCallback");
     singularkey.cleanup(skWidget);
     hideSpinner();
 }
 
-function successCallback(response) {
+function initSessionCallback(response) {
     console.log(response);
     singularkey.cleanup(skWidget);
     idTokenClaims = response.additionalProperties;

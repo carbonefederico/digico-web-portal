@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DigiCo</title>
-    <script id="stPingId" src="https://assets.pingone.com/p1f/web-sdk/4.3.0/p1f-sdk.js?appId=2bdaf281-44e3-4009-9e9b-b9e33777f5df"
+    <script id="stPingId"
+        src="https://assets.pingone.com/p1f/web-sdk/4.3.0/p1f-sdk.js?appId=2bdaf281-44e3-4009-9e9b-b9e33777f5df"
         defer></script>
     <script type="text/javascript" src="https://devsdk.singularkey.com/latest/singularkey.js"></script>
     <script type="text/javascript" src="src/dav.js"></script>
@@ -37,16 +38,16 @@
                 <div id="logout" class="navbar-button hidden">Logout</div>
             </div>
         </div>
-        <div id="landing" class="landing">
+        <div id="landing" class="landing hidden">
             <div id="landing-message" class="landing-message">
                 <h1 class="landing-message-title">Your Crypto Marketplace</h1>
                 <p class="landing-message-text">Buy coins, crypto services, hire crypto experts, and more. Anything you
                     might need is here</p>
                 <p class="landing-message-text">Register & receive a 5€ DigiCo Voucher</p>
-                <div id="landing-message-button" class=" button landing-message-button">Get Started</div>
+                <div id="landing-message-button" class="button landing-message-button">Get Started</div>
             </div>
         </div>
-        <div id="home" class="home hidden">
+        <div id="home" class="home">
             <div class="dashboard">
                 <div class="home-section">
                     <div class="home-section-title">
@@ -68,7 +69,7 @@
                         <svg id="balance-chart" width="400" height="200">
                             <polyline
                                 points="0,200 15,185 30,190 45,140 60,160 75,150 90,125 105,100 120,120 135,135 150,100 165,80 180,65 195,55 210,52 225,48 240,44 255,30 270,32 285,33 300,30 315,40 330,45 345,30 350,31 365,40 380,45 395,30"
-                                stroke="#24a0f5" stroke-width="2" stroke-linecap="round" fill="none" >
+                                stroke="#24a0f5" stroke-width="2" stroke-linecap="round" fill="none">
                             </polyline>
                         </svg>
                     </div>
@@ -112,41 +113,62 @@
                         Add funds to your Euro wallet
                     </div>
                     <div class="deposit-form">
-    
+
                         <input type="text" name="amount" id="" placeholder="1.0 EUR">
-                        <div id="deposit-button" class="button landing-message-button">Deposit</div>
+                        <div id="deposit-button" class="button deposit-button">Deposit</div>
                     </div>
                 </div>
             </div>
-            <div class="quotes">
-                <div class="quotes-title">Quotes</div>
-                <div class="quote">
-                    <div class="quote-text coin">Bitcoin (BTC)</div>
-                    <div class="quote-text">37.114 EUR</div>
-                    <div class="quote-text quote-green">+4.05%</div>
-                    <div class="button quote-button">Trade</div>
+            <div class="trade">
+
+                <div class="quotes">
+                    <div class="quotes-title">Quotes</div>
+                    <div class="quote">
+                        <div class="quote-text coin">Bitcoin (BTC)</div>
+                        <div class="quote-text">37.114 EUR</div>
+                        <div class="quote-text quote-green">+4.05%</div>
+                        <div class="button quote-button">Trade</div>
+                    </div>
+                    <div class="quote">
+                        <div class="quote-text coin">Ethereum (ETH)</div>
+                        <div class="quote-text">2.716 EUR</div>
+                        <div class="quote-text quote-red">-0.22%</div>
+                        <div class="button quote-button">Trade</div>
+                    </div>
+                    <div class="quote">
+                        <div class="quote-text coin">Tether (USDT)</div>
+                        <div class="quote-text">0.953 EUR</div>
+                        <div class="quote-text quote-red">-0.02%</div>
+                        <div class="button quote-button">Trade</div>
+                    </div>
+                    <div class="quote">
+                        <div class="quote-text coin">Bitcoin Cash (BCH)</div>
+                        <div class="quote-text">276.36 EUR</div>
+                        <div class="quote-text quote-green">+1.83%</div>
+                        <div class="button quote-button">Trade</div>
+                    </div>
                 </div>
-                <div class="quote">
-                    <div class="quote-text coin">Ethereum (ETH)</div>
-                    <div class="quote-text">2.716 EUR</div>
-                    <div class="quote-text quote-red">-0.22%</div>
-                    <div class="button quote-button">Trade</div>
-                </div>
-                <div class="quote">
-                    <div class="quote-text coin">Tether (USDT)</div>
-                    <div class="quote-text">0.953 EUR</div>
-                    <div class="quote-text quote-red">-0.02%</div>
-                    <div class="button quote-button">Trade</div>
-                </div>
-                <div class="quote">
-                    <div class="quote-text coin">Bitcoin Cash (BCH)</div>
-                    <div class="quote-text">276.36 EUR</div>
-                    <div class="quote-text quote-green">+1.83%</div>
-                    <div class="button quote-button">Trade</div>
+                <div class="home-section">
+                    <div class="home-section-title">
+                        Quick Buy
+                    </div>
+                    <div class="quick-buy">
+
+                        <div class="deposit-form">
+                            <input type="text" name="btc-amount" id="btc-amount" placeholder="0.01 BTC">
+                            <div id="buy-btc-button" class="button buy-button">Buy</div>
+                        </div>
+                        <div class="deposit-form">
+
+                            <input type="text" name="amount" id="" placeholder="0.1 ETH">
+                            <div id="deposit-button" class="button buy-button">Buy</div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            
-            
+
+
         </div>
     </div>
     <div id="widget" class="skWidget"></div>

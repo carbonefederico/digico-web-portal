@@ -4,6 +4,7 @@ const dav_props = {
     "tvLoginPolicyId": "b000cb5e66c3b89afe46f1ac8655ffd4",
     "preferencesPolicyId": "iUL6OlMwI5spwBuCoZdD7GC9QhUOTuiY",
     "trxPolicyId": "9a369b200bdda575c77db3fdcefa4f20",
+    "buyPolicyId": "68523fcf1ac161c101bfeb184a072da6",
     "registrationPolicyId": "078b975b1e71575e1f48a5015c155e7a",
     "apiKey": "vC3IApdZFgp874z2VpZupiw7XuZqfiDFOM2si6rEAJ7dGL1SJAOO0CpUaykZ5pouTcerPpza418gNCIQ2MTebBKnQVY0bgKUeYPI7KSBddVV1C7DkXznvWFtdyk0uZsNuDqDIs09LLDZ381BjytPwLYcYxLvggAg0mfw77fAZnTm0whihQFgp4qUzrfmMkW5S1uCowE18eHH2fxuvAhcCdlWushJjZI4LaMglSlBRfmSvDLxpRgd6wUGI1t5Tr7T"
 }

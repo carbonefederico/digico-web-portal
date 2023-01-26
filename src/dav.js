@@ -7,15 +7,17 @@ const dav_props = {
     "buyPolicyId": "68523fcf1ac161c101bfeb184a072da6",
     "registrationPolicyId": "078b975b1e71575e1f48a5015c155e7a",
     "apiKey": "vC3IApdZFgp874z2VpZupiw7XuZqfiDFOM2si6rEAJ7dGL1SJAOO0CpUaykZ5pouTcerPpza418gNCIQ2MTebBKnQVY0bgKUeYPI7KSBddVV1C7DkXznvWFtdyk0uZsNuDqDIs09LLDZ381BjytPwLYcYxLvggAg0mfw77fAZnTm0whihQFgp4qUzrfmMkW5S1uCowE18eHH2fxuvAhcCdlWushJjZI4LaMglSlBRfmSvDLxpRgd6wUGI1t5Tr7T"
+
 }
 
 async function getToken() {
-    const url = "https://api.singularkey.com/v1/company/" + dav_props.companyId + "/sdkToken";
+    const url = "https://orchestrate-api.pingone.com/v1/company/" + dav_props.companyId + "/sdktoken";
     let response = await fetch(url, {
         method: "GET",
         headers: {
             "X-SK-API-KEY": dav_props.apiKey
-        }
+        },
+        redirect: "follow",
     });
 
     token = await response.json();
@@ -26,7 +28,7 @@ async function showWidget(policyId, successCallback, errorCallback, onCloseModal
     let widgetConfig = {
         config: {
             method: "runFlow",
-            apiRoot: "https://api.singularkey.com/v1",
+            apiRoot: "https://auth.pingone.com/",
             accessToken: token.access_token,
             companyId: dav_props.companyId,
             policyId: policyId,
@@ -38,6 +40,6 @@ async function showWidget(policyId, successCallback, errorCallback, onCloseModal
         onCloseModal
     };
 
-    singularkey.skRenderScreen(skWidget, widgetConfig);
+    davinci.skRenderScreen(skWidget, widgetConfig);
 }
 

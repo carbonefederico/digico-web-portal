@@ -1,0 +1,310 @@
+1649058661024	geckodriver	INFO	Listening on 127.0.0.1:57981
+1649058661371	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "57982" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofile3HvJqP"
+1649058662077	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofile3HvJqP/search.json.mozlz4", (void 0)))
+console.warn: TopSitesFeed: Contile endpoint returned unexpected status: 403
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:57982/devtools/browser/95f11059-eddf-4747-a629-01141bacf67a
+1649058663785	Marionette	INFO	Listening on port 57992
+1649058663893	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-04 09:51:05.085 plugin-container[20396:368576] NSNotificationCenter connection invalid
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1649058906392	Marionette	INFO	Stopped listening on port 57992
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1650365415993	geckodriver	INFO	Listening on 127.0.0.1:60544
+1650365416490	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "60545" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofile0taZ9c"
+1650365417218	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofile0taZ9c/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:60545/devtools/browser/c3999138-d07d-467c-a4cc-3e40f6097a02
+1650365418860	Marionette	INFO	Listening on port 60552
+1650365418921	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-19 12:50:22.630 plugin-container[34006:1542228] NSNotificationCenter connection invalid
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650370304145	Marionette	INFO	Stopped listening on port 60552
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1650370418017	geckodriver	INFO	Listening on 127.0.0.1:49542
+1650370418536	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "49543" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofile5PO9Li"
+1650370418996	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofile5PO9Li/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:49543/devtools/browser/c7b9d5aa-577a-418c-92ad-27694c67137a
+1650370420614	Marionette	INFO	Listening on port 49548
+1650370420707	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-19 14:13:42.977 plugin-container[35668:1565116] NSNotificationCenter connection invalid
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650388867657	geckodriver	INFO	Listening on 127.0.0.1:51515
+1650388868179	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "51516" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileZRjkjE"
+1650388868837	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileZRjkjE/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:51516/devtools/browser/6d777245-2f70-4055-99ea-3d1a86c653cb
+1650388870478	Marionette	INFO	Listening on port 51521
+1650388870558	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-19 19:21:12.960 plugin-container[38354:1687618] NSNotificationCenter connection invalid
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650388924962	geckodriver	INFO	Listening on 127.0.0.1:51660
+1650388924981	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "51661" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileGASgSS"
+1650388925563	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileGASgSS/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:51661/devtools/browser/b2be6fa1-abca-4af5-8990-1b65542087f7
+1650388927245	Marionette	INFO	Listening on port 51664
+1650388927279	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-19 19:22:09.561 plugin-container[38390:1688588] NSNotificationCenter connection invalid
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650389096441	geckodriver	INFO	Listening on 127.0.0.1:51845
+1650389096961	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "51846" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileQMkY95"
+1650389097554	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileQMkY95/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:51846/devtools/browser/3cc7dc64-1d09-4f2a-8094-de0edb5e110e
+1650389099034	Marionette	INFO	Listening on port 51851
+1650389099143	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-19 19:25:01.660 plugin-container[38576:1690835] NSNotificationCenter connection invalid
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650389138415	geckodriver	INFO	Listening on 127.0.0.1:51977
+1650389138434	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "51978" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileXpRdbZ"
+1650389139098	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileXpRdbZ/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:51978/devtools/browser/41992a7e-ee86-4bfd-8dd1-9eab01ca14a6
+1650389140803	Marionette	INFO	Listening on port 51981
+1650389140914	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-19 19:25:42.994 plugin-container[38597:1691902] NSNotificationCenter connection invalid
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650389163139	Marionette	INFO	Stopped listening on port 51981
+1650389165244	Marionette	INFO	Stopped listening on port 51851
+1650389167127	Marionette	INFO	Stopped listening on port 51664
+1650389168615	Marionette	INFO	Stopped listening on port 51521
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1650389170489	Marionette	INFO	Stopped listening on port 49548
+1650389416490	geckodriver	INFO	Listening on 127.0.0.1:52172
+1650389416507	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "52173" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileeEZsrx"
+1650389416995	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileeEZsrx/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:52173/devtools/browser/b1ba48f1-1212-4cd4-8317-6795f910f1cd
+1650389418635	Marionette	INFO	Listening on port 52176
+1650389418663	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-19 19:30:21.064 plugin-container[38822:1696169] NSNotificationCenter connection invalid
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650389541643	geckodriver	INFO	Listening on 127.0.0.1:52312
+1650389541658	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "52313" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofilenGADsP"
+1650389542094	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofilenGADsP/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:52313/devtools/browser/7e5ad2b5-45e7-449e-8812-34cf7029a81f
+1650389543672	Marionette	INFO	Listening on port 52316
+1650389543741	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-19 19:32:25.713 plugin-container[38860:1697722] NSNotificationCenter connection invalid
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650389590739	geckodriver	INFO	Listening on 127.0.0.1:52439
+1650389590754	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "52440" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofilekBbgVm"
+1650389591208	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofilekBbgVm/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:52440/devtools/browser/ee8b7601-3743-495a-ae3c-dcc893d0a9f9
+1650389592708	Marionette	INFO	Listening on port 52443
+1650389592825	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-19 19:33:16.087 plugin-container[38875:1698403] NSNotificationCenter connection invalid
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1650389777908	Marionette	INFO	Stopped listening on port 52443
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1650389779429	Marionette	INFO	Stopped listening on port 52316
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1650389781014	Marionette	INFO	Stopped listening on port 52176
+1650390213166	geckodriver	INFO	Listening on 127.0.0.1:52919
+1650390213184	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "52920" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileXM9gyh"
+1650390213821	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileXM9gyh/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:52920/devtools/browser/e61347c4-acad-42db-804a-ed0b9a2b3e8b
+1650390215472	Marionette	INFO	Listening on port 52923
+1650390215589	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-19 19:43:38.060 plugin-container[39434:1706838] NSNotificationCenter connection invalid
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+1650440758856	Marionette	INFO	Stopped listening on port 52923
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1651251253121	geckodriver	INFO	Listening on 127.0.0.1:52538
+1651251253192	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "52539" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofile6bpgKV"
+1651251254106	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofile6bpgKV/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:52539/devtools/browser/76f92daa-c9d3-4e15-b6c4-04c46dc00dce
+1651251256036	Marionette	INFO	Listening on port 52548
+1651251256145	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-29 18:54:20.197 plugin-container[69312:8166130] NSNotificationCenter connection invalid
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651251401879	Marionette	INFO	Stopped listening on port 52548
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1651251405690	geckodriver	INFO	Listening on 127.0.0.1:53326
+1651251405708	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "53327" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileF4i6nE"
+1651251406157	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileF4i6nE/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:53327/devtools/browser/eeec42ca-4c9f-4017-9d21-e5b1a645b661
+1651251407735	Marionette	INFO	Listening on port 53332
+1651251407785	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-29 18:56:50.091 plugin-container[69536:8169065] NSNotificationCenter connection invalid
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.securedtouch.com/sdk/securedtouch-sdk-4.1.2w.js?appId=ping-te-3, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651251421118	Marionette	INFO	Stopped listening on port 53332
+1651251469482	geckodriver	INFO	Listening on 127.0.0.1:53708
+1651251469499	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "53709" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileN3klSY"
+1651251469960	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileN3klSY/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:53709/devtools/browser/a96df613-50d2-4ce3-a919-dc01ebf456c9
+1651251471523	Marionette	INFO	Listening on port 53714
+1651251471557	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651251485632	Marionette	INFO	Stopped listening on port 53714
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1651251498451	geckodriver	INFO	Listening on 127.0.0.1:53927
+1651251498466	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "53928" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileMpyaJW"
+1651251498924	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileMpyaJW/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:53928/devtools/browser/5970ace2-fbae-470a-9388-43f61ed58283
+1651251500548	Marionette	INFO	Listening on port 53933
+1651251500631	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-29 18:58:22.488 plugin-container[69566:8170618] NSNotificationCenter connection invalid
+JavaScript warning: https://assets.pingone.com/p1f/web-sdk/4.3.0/p1f-sdk.js?appId=2bdaf281-44e3-4009-9e9b-b9e33777f5df, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://assets.pingone.com/p1f/web-sdk/4.3.0/p1f-sdk.js?appId=2bdaf281-44e3-4009-9e9b-b9e33777f5df, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651251593675	Marionette	INFO	Stopped listening on port 53933
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1651251599014	geckodriver	INFO	Listening on 127.0.0.1:54503
+1651251599031	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "54504" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileJDHuDc"
+1651251599568	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofileJDHuDc/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:54504/devtools/browser/89bfc995-f340-4232-9026-5d1e3e13b369
+1651251601115	Marionette	INFO	Listening on port 54509
+1651251601205	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-29 19:00:02.506 plugin-container[69726:8172866] NSNotificationCenter connection invalid
+JavaScript warning: https://assets.pingone.com/p1f/web-sdk/4.3.0/p1f-sdk.js?appId=2bdaf281-44e3-4009-9e9b-b9e33777f5df, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://assets.pingone.com/p1f/web-sdk/4.3.0/p1f-sdk.js?appId=2bdaf281-44e3-4009-9e9b-b9e33777f5df, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651251846091	Marionette	INFO	Stopped listening on port 54509
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PWebSocket::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1651251848697	geckodriver	INFO	Listening on 127.0.0.1:55671
+1651251848714	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "55672" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofiledrSEr2"
+1651251849174	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofiledrSEr2/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:55672/devtools/browser/00b9810a-c601-410e-8296-64a775674014
+1651251850698	Marionette	INFO	Listening on port 55677
+1651251850786	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-04-29 19:04:13.423 plugin-container[69868:8175755] NSNotificationCenter connection invalid
+JavaScript warning: https://assets.pingone.com/p1f/web-sdk/4.3.0/p1f-sdk.js?appId=2bdaf281-44e3-4009-9e9b-b9e33777f5df, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://assets.pingone.com/p1f/web-sdk/4.3.0/p1f-sdk.js?appId=2bdaf281-44e3-4009-9e9b-b9e33777f5df, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651251963214	Marionette	INFO	Stopped listening on port 55677
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1651578292764	geckodriver	INFO	Listening on 127.0.0.1:57250
+1651578293257	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "57251" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofile63jeOb"
+1651578294083	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofile63jeOb/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:57251/devtools/browser/eb7bdb9d-f628-46c9-9b79-995ce946a75c
+1651578295759	Marionette	INFO	Listening on port 57256
+1651578295813	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651578318834	geckodriver	INFO	Listening on 127.0.0.1:57359
+1651578319349	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "57360" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofilegJH1eq"
+1651578319990	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofilegJH1eq/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:57360/devtools/browser/f5e2a052-7a0d-4393-a6cd-fdbda843d899
+1651578321715	Marionette	INFO	Listening on port 57366
+1651578321748	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-05-03 13:45:24.867 plugin-container[60985:2437265] NSNotificationCenter connection invalid
+JavaScript warning: https://assets.pingone.com/p1f/web-sdk/4.3.0/p1f-sdk.js?appId=2bdaf281-44e3-4009-9e9b-b9e33777f5df, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://assets.pingone.com/p1f/web-sdk/4.3.0/p1f-sdk.js?appId=2bdaf281-44e3-4009-9e9b-b9e33777f5df, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651578526541	Marionette	INFO	Stopped listening on port 57366
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1651578528076	Marionette	INFO	Stopped listening on port 57256
+1651578559453	geckodriver	INFO	Listening on 127.0.0.1:58202
+1651578559972	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=1500" "--height=1300" "--remote-debugging-port" "58203" "-foreground" "-no-remote" "-profile" "/var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofile0Y3jQB"
+1651578560558	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/0q/dbz1g2s97g108w1f2x_y3lvc0000gq/T/rust_mozprofile0Y3jQB/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:58203/devtools/browser/2482bc2c-5370-426b-8b74-7555b5e91f5a
+1651578562127	Marionette	INFO	Listening on port 58212
+1651578562163	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2022-05-03 13:49:24.257 plugin-container[61356:2442476] NSNotificationCenter connection invalid
+JavaScript warning: https://assets.pingone.com/p1f/web-sdk/4.3.0/p1f-sdk.js?appId=2bdaf281-44e3-4009-9e9b-b9e33777f5df, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://assets.pingone.com/p1f/web-sdk/4.3.0/p1f-sdk.js?appId=2bdaf281-44e3-4009-9e9b-b9e33777f5df, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651578585198	Marionette	INFO	Stopped listening on port 58212
